@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exam</title>
+        <link rel="stylesheet" href="cs.css" >
+        <link rel="icon" href="icon2.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    </head>
+    <body>
+        <header>
+            <a href="">
+                <span>Exam</span>
+            </a>
+        </header>
+
+        <div class="container">
+
+            <div class="notNowTheExam" id="notNowTheExam" >
+                <i class="fas fa-clock"></i>
+                <h2>The Exam Is Not Now</h2>
+            </div>
+            
+            <!--        Questions container       -->
+            
+
+            <!--        Responses container       -->
+            <div class="ResponseParentDiv">
+                <!--  start comment--
+                
+                <div class="examNameFinishedEdit">
+                    <h2 id="examName">Opject Oriented Programming</h2>
+                    <p id="examDescription">Hello in oop exam</p>
+                </div>
+                <div class="question">
+                    <div class="question-title">
+                        <div class="question-number">1.</div>
+                        
+                        <div class="question-name">the size of int data type is</div>
+                        <div class="questioninformation">
+                            <span style='color: red;font-size: larger;'>*</span> (3point)
+                        </div>
+                    </div>
+                    <div class="questio-elements">
+                        <div class="question-element">
+                            <input type="radio">
+                            <span>4 byte</span>
+                        </div>
+                        <div class="question-element">
+                            <input type="radio">
+                            <span>2 byte</span>                                
+                        </div>
+                    </div>
+                </div>
+            !--  end comment-->
+            </div>
+            <div style="text-align: center;">
+                <button class="submit-form" id="submit-form">Submit</button>
+            </div>
+               
+        </div>
+        <!------------------------------ timer progress ---------------------------------->
+        
+        <div class="timer">
+            <div id="progressDiv">
+                <svg width="250" height="250">
+                    <circle cx="125" cy="125" r="100" class="trak" ></circle>
+                    <circle cx="125" cy="125" r="100" class="progress"></circle>
+                </svg>
+                <h1 id="parcent"><span id="parcentText">0</span>%</h1>
+            </div>
+        </div>
+
+        <!--------------------------------------- SCRIPT ------------------------------------------------->
+        <!--------------------------------------- SCRIPT ------------------------------------------------->
+
+        <script src="Exam.js"></script>
+    </body>
+</html>

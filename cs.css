@@ -1,0 +1,338 @@
+body{
+    background-color: #e5eff7;
+    margin: 0;
+}
+header{
+    background-color: #010001;
+    height: 55px;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    background-color: #1b7669;
+    font-size: x-large;
+}
+.container{
+    margin: 85px auto;
+    width: 57%;
+    
+   
+}
+.headerOption{
+    width: 100%;
+    font-size: larger;
+    text-align: center;
+    display: flex;
+}
+.selectedOptin{
+    width: 100%;
+    cursor: pointer;
+}
+.optionBorderTop{
+    border-top: 5px solid ;
+    border-top-color: #2c7b6f;
+}
+.option{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+    color: #03787C;
+    background-color: #f3f6fb;
+}
+.QuestionParentDiv,
+.ResponseParentDiv,
+.startEndExam,
+.notNowTheExam{
+    background-color: white;
+    padding: 30px;
+    
+}
+.ResponseParentDiv{
+    padding-top: 0px;
+}
+.notNowTheExam{
+    border-top: 5px solid #22786e;
+    text-align: center;
+    color: #22786e;
+}
+.notNowTheExam i{
+    font-size: 200px;
+}
+
+/*        Questions container       */
+
+
+.examNameEditDetails{
+    background-color: #f3f2f5;
+    padding: 10px;
+    border-top: 5px solid #22786e;
+}
+
+
+.examNameEditDetails-examName,
+.examNameEditDetails-examDescription{
+    width: -webkit-fill-available;
+    padding: 8px 15px;
+    margin-top: 10px;
+    font-size: medium;
+    border: none;
+}
+/*
+.editButton{
+    background: #1b7669;
+    color: white;
+    margin-top: 30px;
+    padding: 8px 20px;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+}
+*/
+
+/*        make  question         */
+.make-question{
+    margin: 35px 0px;
+    background-color: #f3f2f5;
+    padding: 10px;
+    border-top: 5px solid #22786e;
+}
+.make-question-title{
+    display: flex;
+    margin: 35px 0px 10px;
+}
+.make-question-number{
+    align-items: center;
+    display: flex;
+    width: 25px;
+    font-size: large;
+}
+.make-question-name{
+    padding: 10px 15px;
+    font-size: medium;
+    border: none;
+    width: 100%;
+    margin: 0px 5px;
+}
+.make-question-element{
+    margin: 14px 25px;
+    display: flex;
+}
+.make-question-element input[type="radio"]{
+    width: 25px;
+    margin: auto 4px;
+}
+.make-question-element input[type="text"]{
+    padding: 8px 15px;
+    font-size: medium;
+    border: none;
+    min-width: 50%;
+}
+.add-option-element{
+    margin: 30px 35px 10px;
+    padding: 6px 20px;
+    font-size: medium;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+/*degree*/
+.degree-Div{
+    border-top: 2px solid white;
+    padding: 10px;
+    text-align: end;
+}
+.questionDegree{
+    padding: 4px 8px;
+    width: 5%;
+    border: none;
+}
+.requiredDiv{
+    display: inline-block;
+    border-right: 2px solid white;
+    padding-right: 7px;
+}
+.questionDegreeDiv{
+    display: inline;
+}
+/* button to add new question */
+.Add-question-container,
+.submit-form,
+.save-form,
+.response-form{
+    background: #1b7669;
+    color: white;
+    padding: 15px 35px;
+    font-size: medium;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.save-form,
+.submit-form{
+    box-shadow: 5px 5px 10px #1b7669;
+}
+
+
+
+/*        show question  +  Responses container    */
+.examNameFinishedEdit{
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    background-color: #03787c;
+    margin-left: -30px;
+    margin-right: -30px;
+    color: white;
+    font-size: larger;
+}
+.question{
+    margin: 15px 0px 40px;
+    padding: 10px 20px;
+    font-size: medium;
+}
+.question-title{
+    font-size: larger;
+    margin: 15px 0px;
+    background-color: #e8f2f4;
+}
+.question-number{
+    background-color: #0a7c80;
+    width: 25px;
+    padding: 5px;
+    margin-left: 27px;
+    text-align: center;
+    color: white;
+}
+.questioninformation{
+    text-align: end;
+    padding-right: 2%;
+    color: #0a7c80;
+}
+.question-name{
+    padding: 15px 30px 20px;
+
+}
+.question-element{
+    margin: 18px 0px;
+    padding-left: 15px;
+    font-size: large;
+    display: flex;
+}
+.question-element span{
+    margin-left: 10px;
+}
+
+/*
+.submit-form,
+.save-form{
+    background: #1b7669;
+    color: white;
+    margin-top: 30px;
+    padding: 8px 20px;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+}*/
+.save-form-div
+,.save-response-div{
+    text-align: center;
+}
+
+
+
+/************/
+.startEndExam12{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f3f2f5;
+    border-top: 5px solid #2c7b6f;
+    margin-top: 35px;
+    padding: 15px;
+}
+.startEndExam123{ 
+    /*width: 100%;*/
+    display: inline-block;
+    background-color: #e5eff7;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 40px;
+    color: #2c7b6f;
+    box-shadow: 3px 3px 6px;
+}
+.startEndExam123 input{
+    padding: 5px 10px;
+    font-size: large;
+    margin: 18px 10px;
+    color: #2c7b6f;
+    border: none;
+    width: 72%;
+}
+
+
+/****************  timer progress    *********************/
+.timer{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+.trak{
+    stroke:#03787c;
+    fill: none;
+}
+.progress{
+    stroke: #03787c;
+    fill: none;
+    stroke-width: 10;
+    /* stroke-dasharray: 630;
+    stroke-dashoffset: 0; */
+}
+#progressDiv{
+    position: relative;
+    width:250px; height:250px
+}
+#parcent{
+    position: absolute;
+    top:35%;
+    left: 35%;
+    color:#03787c;
+}
+
+/***************student present***************/
+.presentStudents{
+    border-top: 2px solid #1b7669;
+    margin-top: 15px;
+    padding: 15px;
+}
+.student{
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid;
+    padding: 10px;
+    margin: 5px;
+    color: #1b7669;
+    text-align: center;
+}
+
+.studentName,.studentDegree,.studentSolve{
+    width: 30%;
+}
+.studentName{
+    width: 40%;
+}
+.studentSolve a{
+    text-decoration: auto;
+    border: 1px solid;
+    padding: 5px 11px;
+    border-radius: 7px;
+    background: #e5eff7;
+    color: #1b7669;
+}

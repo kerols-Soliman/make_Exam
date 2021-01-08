@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exam</title>
+        <link rel="stylesheet" href="cs.css" >
+        <link rel="icon" href="icon2.png">
+    </head>
+    <body>
+        <header>
+            <a href="">
+                <span>Make Exam</span>
+            </a>
+        </header>
+
+        <section class="container">
+            <!--        Questions or Responses header       -->
+            <div class="headerOption">
+                <div class="selectedOptin" id="selectedOptin1" onclick="changeSelectedToQuestion(this)">
+                    <div class="optionBorderTop"></div>
+                    <div class="option" style="background-color: white;">
+                        <span>Questions</span>
+                    </div>
+                </div>
+                <div class="selectedOptin" id="selectedOptin2" onclick="changeSelectedToResponses(this)">
+                    <div class="optionBorderTop" style="opacity: 0;"></div>
+                    <div class="option">
+                        <span>Responses</span>
+                    </div>
+                </div>
+                
+            </div>
+            <!--        Questions container       -->
+            <div class="QuestionParentDiv">
+                <div class="examName">
+                    
+                    <div class="examNameEditDetails">
+                        <input type="text" class="examNameEditDetails-examName" value="Exam Name">
+                        <input type="text" class="examNameEditDetails-examDescription" placeholder="enter exam Description">
+                        <!--button class="editButton">Edit</button-->
+                    </div>
+                </div>
+                <div class="question-container">
+                    <!--   start the comment
+                    <!--  // simple present of on multiple chose
+                    <div class="make-question" >
+                        <div class="make-question-title">
+                            <span class="make-question-number">1.</span>
+                            <input type="text" class="make-question-name" value="Question"    name="q1">
+                        </div>
+                        <div class="make-questio-elements"        data-counter="1">
+                            <div class="make-question-element">
+                                <input type="radio"    name="q1">
+                                <input type="text" placeholder="option"    name="q1">
+                            </div>
+                            <div class="make-question-element">
+                                <input type="radio"    name="q1">
+                                <input type="text" placeholder="option"    name="q1">
+                                
+                            </div>
+                            
+                        </div>
+                        <button class="add-option-element" onclick="buttonAddOption(this)">Add option</button> 
+                        <div class="degree-Div">
+                            <div class="requiredDiv">
+                                <input type="checkbox" name="requird" id="requiredQuestion" value="required"> Is Required
+                            </div>
+                            <div class="questionDegreeDiv">
+                                The Degree : <input type="number" id="questionDegree" min="1" value="1">
+                            </div>
+                        </div>   
+                    </div>
+                   end the comment-->
+                </div>
+                <button class="Add-question-container">Add New</button> 
+            </div>
+
+            <!--        Responses container       -->
+            <div class=" startEndExam" style="display: none;">
+                <div class="startEndExam12">
+                    <div class="startEndExam123">
+                        <h2>Start Time</h2>
+                        <input id="startTime" type="time"/>
+                    </div>
+                    <div class="startEndExam123">
+                        <h2>Date</h2>
+                        <input id="examDate" type="date" required/>
+                    </div>
+                    <div class="startEndExam123">
+                        <h2>End Time</h2>
+                        <input id="endTime" type="time"/>
+                    </div>
+                </div>
+                <div class="save-response-div">
+                    <button class="response-form" id="response-form">Save Response</button><br>
+                    <a href="exam.html"  target="_blank">
+                        <button class="response-form">Go To Exam Link</button>
+                    </a>
+                </div>
+                
+                <!--
+                <div class="presentStudents">
+                    <div class="student">
+                        <div class="studentName">
+                            kerolos
+                        </div>
+                        <div class="studentDegree">
+                            15 point
+                        </div>
+                        <div class="studentSolve">
+                            go to solve
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+            <div class="save-form-div">
+                <button class="save-form" id="save-form">Save Form</button>
+            </div>
+               
+        </section>
+
+        <!--------------------------------------- SCRIPT ------------------------------------------------->
+        <script src="script.js"></script>
+        
+    </body>
+</html>
